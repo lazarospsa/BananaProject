@@ -9,23 +9,25 @@ Lazaros Psarokostas, 2019 ©
 #include <fstream>
 #include <iostream>
 
+using namespace std;
+
 int main () {
 
-  std::ofstream index ("index.html", std::ofstream::out);
+  ofstream index ("index.html", ofstream::out);
 
-  std::string title,header,menu1,menu2,menu3,menu4,titlemaintext,maintext,link1,link2,link3,link4,job,hobbies;
+  string title,header,menu1,menu2,menu3,menu4,titlemaintext,maintext,link1,link2,link3,link4,job,hobbies;
 
 
-  std::cout << "Give website title: \n"; std::getline(std::cin, title);
-  std::cout << "Give header title: \n"; std::getline(std::cin, header);
-  std::cout << "Give your Facebook username: \n"; std::getline(std::cin, link1);
-  std::cout << "Give your Instagram username: \n"; std::getline(std::cin, link2);
-  std::cout << "Give your Linkedin username: \n"; std::getline(std::cin, link3);
-  std::cout << "Give your Youtube link: \n"; std::getline(std::cin, link4);
-  std::cout << "Give main text title: \n"; std::getline(std::cin, titlemaintext);
-  std::cout << "Give main text: \n"; std::getline(std::cin, maintext);
-  std::cout << "Give description of your job: \n"; std::getline(std::cin, job);
-  std::cout << "Give your hobbies: \n"; std::getline(std::cin, hobbies);
+  cout << "Give website title: \n"; getline(cin, title);
+  cout << "Give header title: \n"; getline(cin, header);
+  cout << "Give your Facebook username: \n"; getline(cin, link1);
+  cout << "Give your Instagram username: \n"; getline(cin, link2);
+  cout << "Give your Linkedin username: \n"; getline(cin, link3);
+  cout << "Give your Youtube link: \n"; getline(cin, link4);
+  cout << "Give main text title: \n"; getline(cin, titlemaintext);
+  cout << "Give main text: \n"; getline(cin, maintext);
+  cout << "Give description of your job: \n"; getline(cin, job);
+  cout << "Give your hobbies: \n"; getline(cin, hobbies);
     menu1="Facebook";
     menu2="Instagram";
     menu3="LinkedIn";
